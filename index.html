@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>Prachi's Grocery List</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Your styles should be called here -->
+        <link href="main.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+    </head>
+
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <form align="center">
+            <button class="filter" data-filter="refrigerated">Refrigerated</button>
+            <button class="filter" data-filter="meat">Meat</button>
+            <button class="filter" data-filter="produce">Produce</button>
+            <button class="filter" data-filter="dairy">Dairy</button>
+            <button class="filter" data-filter="dry">Dry</button>
+            <button class="filter" data-filter="sweet">Sweet</button>
+            <button class="filter" data-filter="seeds">Seeds</button>
+            <button class="filter" data-filter="protein">Protein</button>
+            <button class="filter" data-filter="greens">Greens</button>
+            <button class="filter" data-filter="vegetables">Vegetables</button>
+            <button class="filter" data-filter="breakfast">Breakfast</button>
+        </form>
+
+        <div class=display align="center">
+            <div id="chicken " class="refrigerated meat protein active item reset">Chicken</div>
+            <div id="salmon " class="refrigerated meat protein active item reset">Salmon</div>
+            <div id="apples " class="refrigerated produce breakfast sweet active item reset">Apples</div>
+            <div id="greek yogurt " class="refrigerated breakfast dairy active item reset">Greek Yogurt</div>
+            <div id="milk " class="refrigerated dairy active item reset">Milk</div>
+            <div id="cilantro " class="refrigerated produce greens active item reset">Cilantro</div>
+            <div id="parsley " class="refrigereated produce greens active item reset">Parsley</div>
+            <div id="honey " class="sweet active item reset">Honey</div>
+            <div id="sesame seeds " class="dry protein seeds active item reset">Sesame Seeds</div>
+            <div id="quinoa " class="dry protein active item reset">Qunioa</div>
+            <div id="ground flax seeds " class="dry protein seeds active item reset">Ground Flax Seeds</div>
+            <div id="broccoli " class="refrigerated produce greens vegetables active item reset">Broccoli</div>
+            <div id="carrots " class="refrigerated produce vegetables active item reset">Carrots</div>
+        </div>
+
+        <div align="center">
+            <button class="filter" id="reset" data-filter="reset">Reset</button>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js "></script>
+
+        <!-- Your javascript should be called here -->
+        <script src="main.js "></script>
+    </body>
+
+</html>
