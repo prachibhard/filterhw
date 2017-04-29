@@ -35,6 +35,10 @@ body {
     line-height: 1;
 }
 
+form {
+    margin: 5%;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -86,12 +90,21 @@ body {
     padding: 5%;
 }
 
+h4 {
+    padding-bottom: 5%
+}
+
+img {
+    width: 50%;
+}
+
 .item {
     display: none;
 }
 
 .item.active {
     display: block;
+    margin: 5%;
 }
 
 button.selected {
